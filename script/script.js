@@ -1,3 +1,32 @@
+window.onload = function() {
+    
+    const btnDisplay = document.getElementById("btnDisplay");
+    const numbers = document.getElementsByClassName("number");
+    const selectColor = document.getElementById("color");
+    const body = document.getElementsByTagName("body");
+
+    btnDisplay.addEventListener('click', function() {
+        // let num1 = parseInt(numbers[0].value);
+        // let num2 = parseInt(numbers[1].value);
+        // let total = AddTwoNumbers(num1, num2);
+        let selectedColorIndex = selectColor.selectedIndex;
+        let color = selectColor.options[selectedColorIndex].value;
+
+        body[0].style.backgroundColor = color;
+
+        // if(isNaN(total)) {
+        //     alert("Enter a valid number");
+        // }
+        // else {
+        //     alert(total);
+        // } 
+    });
+}
+
+
+
+
+
 // loops
 // conditions
 // variables
@@ -68,7 +97,24 @@ const numbers = [65, 44, 12, 4];
 // Logical Operators
 // &&, ||, !
 
+// Input
+// Getting information
+// input
+// textarea
+// buttons
 
+// Output
+// Displaying Information
+// text boxes
+// color changes
+
+
+// AddTwoNumbers(1,5);
+
+function AddTwoNumbers(num1, num2) {
+    let total = num1 + num2;
+    return total;
+}
 
 let compareExample = 5 % 3;
 // alert(compareExample);
